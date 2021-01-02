@@ -20,7 +20,7 @@ You can retrieve the shape and signedness of a `Value`:
 >>> from nmigen import *
 >>> a = Const(10)
 >>> a.shape()
-unsigned(4)
+Shape(width=4, signed=False)
 >>> a.width
 4
 >>> a.signed
