@@ -114,7 +114,7 @@ Again, like with `Const`, you can retrieve the shape of a `Signal`:
 >>> from nmigen import *
 >>> a = Signal(signed(4))
 >>> a.shape()
-signed(4)
+Shape(width=4, signed=True)
 ```
 
 Again, note that `signed(4)` gives you a 4-bit 2's complement signal which can represent anything from -8 to +7. If you meant to create a Signal that is 4 bits *plus a sign* in order to represent -16 to +15, then of course you will want `signed(5)`.
@@ -127,7 +127,7 @@ Again, note that `signed(4)` gives you a 4-bit 2's complement signal which can r
 >>> from nmigen import *
 >>> x = Signal(range(-5, 11))
 >>> x.shape()
-signed(5)
+Shape(width=5, signed=True)
 ```
 
 ### Signal from enum
