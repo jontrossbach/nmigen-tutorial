@@ -85,7 +85,7 @@ class Func(Enum):
 
 >>> x = Const(2, Func)
 >>> x.shape()
-unsigned(3)
+Shape(width=3, signed=False)
 ```
 
 This is the equivalent of finding the minimum and maximum value of the enum, and then using that as the range for the constant. In the example above, it would be the same as `Const(2, range(0, 5))`.
