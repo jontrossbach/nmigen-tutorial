@@ -95,7 +95,7 @@ You can also use this syntax, which might be better since you can use the enumer
 ```
 >>> x = Value.cast(Func.SUB)
 >>> x.shape()
-unsigned(3)
+Shape(width=3, signed=False)
 ```
 
 The enumerated values of the enum can be used anywhere a `Const` can be used, so that `Func.SUB` is equivalent to `Const(2, range(0, 5))` or `Const(2, Func)` or `Value.cast(Func.SUB)`.
