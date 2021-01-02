@@ -43,7 +43,7 @@ Python's integers are of potentially infinite bit width. In keeping with this ph
 >>> s2 = Signal(4)
 >>> v = s1 + s2
 >>> v.shape()
-(width=5, signed=False)
+Shape(width=5, signed=False)
 >>>
 ```
 
