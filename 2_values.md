@@ -149,7 +149,7 @@ class Func(Enum):
 
 >>> x = Signal(Func)
 >>> x.shape()
-unsigned(3)
+Shape(width=5, signed=True)
 ```
 
 Again, as with `Const`, this is the equivalent of finding the minimum and maximum value of the enum, and then using that as the range for the signal. In the example above, it would be the same as `Signal(range(0, 5))`.
