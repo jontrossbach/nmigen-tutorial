@@ -35,7 +35,7 @@ False
 >>> from nmigen import *
 >>> a = Const(-10)
 >>> a.shape()
-signed(5)
+Shape(width=5, signed=True)
 >>> a.width
 5
 >>> a.signed
