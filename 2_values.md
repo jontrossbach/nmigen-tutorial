@@ -92,7 +92,7 @@ This is the equivalent of finding the minimum and maximum value of the enum, and
 
 You can also use this syntax, which might be better since you can use the enumerated value instead of the integer:
 
-```
+```python
 >>> x = Value.cast(Func.SUB)
 >>> x.shape()
 Shape(width=3, signed=False)
