@@ -63,7 +63,7 @@ If the range contains a negative number, then the constant will be signed: `Cons
 >>> from nmigen import *
 >>> x = Const(3, range(-5, 11))
 >>> x.shape()
-signed(5)
+Shape(width=5, signed=True)
 ```
 
 ### Shapes: enums
